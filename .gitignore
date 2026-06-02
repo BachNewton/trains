@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+*.zip
+
+# secrets
+.env.local
+.env*.local
+
+# local GTFS data + scratch (fetched / generated, not source)
+/gtfs/
+resp.json
+stations.json
+today.json
+hap.json
+dep.json
+dep2.json
