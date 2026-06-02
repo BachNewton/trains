@@ -39,7 +39,7 @@ npm run fetch                          # FI (open) + SE (needs the key, ~1GB dow
 npm run dev                            # http://localhost:3002
 ```
 
-Quick logic check without the server: `npm run test:route`.
+Run the tests: `npm test`.
 
 ## Scripts
 
@@ -48,7 +48,7 @@ Quick logic check without the server: `npm run test:route`.
 | `npm run dev` | Next.js dev server on port 3002 |
 | `npm run fetch` | download + prepare both country feeds |
 | `npm run fetch:fi` / `fetch:se` | one country at a time |
-| `npm run test:route` | run a few city→city queries through the engine, logged |
+| `npm test` | test suite (Node's built-in runner); feed-dependent tests skip if data isn't fetched |
 
 Data feeds live under `gtfs/` and are git-ignored — fetch them locally.
 
